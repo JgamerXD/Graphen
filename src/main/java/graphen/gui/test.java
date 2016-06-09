@@ -1,5 +1,7 @@
 package graphen.gui;
 
+import graphen.Utils;
+
 import javax.swing.*;
 
 /**
