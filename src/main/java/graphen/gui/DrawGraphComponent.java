@@ -24,7 +24,8 @@ public class DrawGraphComponent extends JComponent{
 
         Node[] nodes = graph.getNodes();
         double[][] edges = graph.getEdges();
-
+        Arrays.setAll(array, i -> {NO_CONNECTION});
+        Arrays.
         /**
          * Draw edges
          */
