@@ -4,7 +4,16 @@ public class GraphNode {
 
 	private String name;
 	private boolean marked;
-	
+	private int posX, posY;
+
+	public void setPosX(int posX) {
+		this.posX = posX;
+	}
+
+	public void setPosY(int posY) {
+		this.posY = posY;
+	}
+
 	public GraphNode(String pName){
 		name = pName;
 	}
@@ -26,14 +35,10 @@ public class GraphNode {
 	}
 
 	public int getPosX() {
-		// TODO Auto-generated method stub
-		return 0;
+		return posX;
 	}
 
 	public int getPosY() {
-		// TODO Auto-generated method stub
-		return 0;
+		return posY;
 	}
-	
-	
 }

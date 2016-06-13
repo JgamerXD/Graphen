@@ -20,15 +20,15 @@ public class Graph {
 			Arrays.fill(edges[i],NO_CONNECTION);
 		}
 	}
-	
-	private void addNode(GraphNode pNode){
+
+	public void addNode(GraphNode pNode){
 		if(anzahl < maxAnzahl){
 			graphNodes[anzahl]=pNode;
 			anzahl++;
 		}
 	}
-	
-	private int getNodeIndex(String pName){
+
+	public int getNodeIndex(String pName){
 		int index =-1;
 		int i =0;
 		while(index<0 && i<graphNodes.length){
@@ -41,8 +41,8 @@ public class Graph {
 		return index;
 		
 	}
-	
-	private GraphNode getNode(String pName){
+
+	public GraphNode getNode(String pName){
 		GraphNode Node = null;
 		int index =-1;
 		int i =0;
@@ -57,12 +57,12 @@ public class Graph {
 		return Node;
 		
 	}
-	
-	private void removeNode(GraphNode pNode){
+
+	public void removeNode(GraphNode pNode){
 		
 	}
-	
-	private void addEdges(GraphNode pNode,GraphNode oNode,double d){
+
+	public void addEdges(GraphNode pNode,GraphNode oNode,double d){
 		int i = getNodeIndex(pNode.getName());
 		int j = getNodeIndex(oNode.getName());
 		if(i!=-1 && j!=-1){
@@ -70,26 +70,26 @@ public class Graph {
 			edges[j][i]=d;
 		}
 	}
-	
-	private boolean hasEdge(GraphNode pNode,GraphNode oNode){
+
+	public boolean hasEdge(GraphNode pNode,GraphNode oNode){
 		int i = getNodeIndex(pNode.getName());
 		int j = getNodeIndex(oNode.getName());
 		return edges[i][j] != NO_CONNECTION;
 	}
-	
-	private void removeEdge(GraphNode pNode,GraphNode oNode){
+
+	public void removeEdge(GraphNode pNode,GraphNode oNode){
 		
 	}
-	
-	private void resetMarks(){
+
+	public void resetMarks(){
 		
 	}
-	
-	private boolean allNodesMarked(){
+
+	public boolean allNodesMarked(){
 		return false;
 	}
-	
-	private double getEdgeWeight(GraphNode pNode,GraphNode oNode){
+
+	public double getEdgeWeight(GraphNode pNode,GraphNode oNode){
 		
 		return 0;
 	}
