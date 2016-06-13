@@ -24,6 +24,7 @@ public class DrawGraphComponent extends JComponent{
 
         Node[] nodes = graph.getNodes();
         double[][] edges = graph.getEdges();
+
         /**
          * Draw edges
          */
