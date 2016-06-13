@@ -1,9 +1,15 @@
 package graphen.gui;
 
 
+import graphen.Graph;
+import graphen.GraphNode;
 import graphen.Utils;
 
+
+
 import javax.swing.*;
+
+
 import java.awt.*;
 import java.util.Arrays;
 
@@ -22,10 +28,8 @@ public class DrawGraphComponent extends JComponent{
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-        Node[] nodes = graph.getNodes();
+        GraphNode[] nodes = graph.getNodes();
         double[][] edges = graph.getEdges();
-        Arrays.setAll(array, i -> {NO_CONNECTION});
-        Arrays.
         /**
          * Draw edges
          */
@@ -43,8 +47,8 @@ public class DrawGraphComponent extends JComponent{
         /**
          * Draw nodes
          */
-        for(Node n:nodes) {
-            g2d.fillOval(n.getX,n.getY);
+        for(GraphNode n:nodes) {
+            g2d.fillOval(n.getPosX(),n.getPosY(),5,5);
         }
     }
 }
