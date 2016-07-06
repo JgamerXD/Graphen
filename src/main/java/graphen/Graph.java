@@ -58,9 +58,6 @@ public class Graph {
 		
 	}
 
-	public void removeNode(GraphNode pNode){
-		
-	}
 
 	public void addEdges(GraphNode pNode,GraphNode oNode,double d){
 		int i = getNodeIndex(pNode.getName());

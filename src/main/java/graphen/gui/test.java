@@ -31,9 +31,9 @@ public class test extends JFrame{
 
         n1.setPosY(1);
         n1.setPosX(1);
-        n2.setPosY(2);
-        n2.setPosX(2);
-        n3.setPosY(3);
+        n2.setPosY(20);
+        n2.setPosX(20);
+        n3.setPosY(30);
         n3.setPosX(3);
 
         testGraph.addNode(n1);
